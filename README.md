@@ -1,6 +1,6 @@
 # Solution Load sample
 
-[![Build status](https://ci.appveyor.com/api/projects/status/khf234gs5mg2xp72?svg=true)](https://ci.appveyor.com/project/madskristensen/singlefilegeneratorsample)
+[![Build status](https://ci.appveyor.com/api/projects/status/s0wahy0lg80gaggm?svg=true)](https://ci.appveyor.com/project/madskristensen/solutionloadsample)
 
 **Applies to Visual Studio 2015 and newer**
 
