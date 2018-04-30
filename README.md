@@ -13,7 +13,10 @@ Description coming soon...
 
 [See full Pakcage class in the source](src/VSPackage.cs)
 
+## Further reading
 
+* [How to use AsyncPackage with background load](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background)
+* [Use Rule-based UI context for package load](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions)
 
 ## License
 [Apache 2.0](LICENSE)

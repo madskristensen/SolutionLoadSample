@@ -46,7 +46,7 @@ namespace SolutionLoadSample
         private void HandleOpenSolution(object sender = null, EventArgs e = null)
         {
             // Handle the open solution and try to do as much work
-            // on a background thread if possible
+            // on a background thread as possible
         }
     }
 }
