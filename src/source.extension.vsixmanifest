@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="SolutionLoadSample.6238ee82-12cb-4ad9-88ac-19181fde5832" Version="1.0" Language="en-US" Publisher="Mads Kristensen" />
+        <Identity Id="6238ee82-12cb-4ad9-88ac-19181fde5832" Version="1.0" Language="en-US" Publisher="Mads Kristensen" />
         <DisplayName>Solution Load Sample</DisplayName>
         <Description xml:space="preserve">Demonstrates use of solution load events</Description>
     </Metadata>

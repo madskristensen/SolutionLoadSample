@@ -34,8 +34,7 @@ Step #2 has always been considered a best practice, but now it is a mandatory st
 It used to be ok to autoload when a solution opened and then hook up the event handler, similar to this:
 
 ```c#
-[ProvideAutoLoad(VSConstants.UICONTEXT.SolutionHasSingleProject_string, PackageAutoLoadFlags.BackgroundLoad)]
-[ProvideAutoLoad(VSConstants.UICONTEXT.SolutionHasMultipleProjects_string, PackageAutoLoadFlags.BackgroundLoad)]
+[ProvideAutoLoad(VSConstants.UICONTEXT.SolutionOpening_string, PackageAutoLoadFlags.BackgroundLoad)]
 public sealed class VSPackage : AsyncPackage
 {
     protected override Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -54,8 +53,7 @@ public sealed class VSPackage : AsyncPackage
 The issue in the above sample is that when the `SolutionEvents.OnAfterOpenSolution` event handler is registered, a solution might already be open. So we need to make sure to check that first, like so:
 
 ```c#
-[ProvideAutoLoad(VSConstants.UICONTEXT.SolutionHasSingleProject_string, PackageAutoLoadFlags.BackgroundLoad)]
-[ProvideAutoLoad(VSConstants.UICONTEXT.SolutionHasMultipleProjects_string, PackageAutoLoadFlags.BackgroundLoad)]
+[ProvideAutoLoad(VSConstants.UICONTEXT.SolutionOpening_string, PackageAutoLoadFlags.BackgroundLoad)]
 public sealed class VSPackage : AsyncPackage
 {
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
