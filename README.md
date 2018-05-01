@@ -51,7 +51,7 @@ public sealed class VSPackage : AsyncPackage
 }
 ```
 
-The issue in the above sample is that when the OnAfterOpenSolution event handler is registered, a solution might already be open. So we need to make sure to check that first, like so:
+The issue in the above sample is that when the `SolutionEvents.OnAfterOpenSolution` event handler is registered, a solution might already be open. So we need to make sure to check that first, like so:
 
 ```c#
 [ProvideAutoLoad(VSConstants.UICONTEXT.SolutionHasSingleProject_string, PackageAutoLoadFlags.BackgroundLoad)]
