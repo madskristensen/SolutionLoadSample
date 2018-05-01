@@ -19,7 +19,7 @@ namespace SolutionLoadSample
     {
         protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
-            // Since this package might not be initialized until after a solution has loaded,
+            // Since this package might not be initialized until after a solution has finished loading,
             // we need to check if a solution has already been loaded and then handle it.
             bool isSolutionLoaded = await IsSolutionLoadedAsync();
 
