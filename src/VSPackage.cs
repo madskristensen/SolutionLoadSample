@@ -13,7 +13,7 @@ namespace SolutionLoadSample
     [Guid("61eadc52-5677-4548-b273-08f1e6574f71")]
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration("Solution Load Sample", "Demonstrates use of solution load events", "1.0")]
-    // The following line will schedule the package to be initialized when a solution has loaded
+    // The following line will schedule the package to be initialized when a solution is being opened
     [ProvideAutoLoad(VSConstants.UICONTEXT.SolutionOpening_string, PackageAutoLoadFlags.BackgroundLoad)]
     public sealed class VSPackage : AsyncPackage
     {
