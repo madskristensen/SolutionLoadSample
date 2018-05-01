@@ -36,7 +36,7 @@ namespace SolutionLoadSample
         private async Task<bool> IsSolutionLoadedAsync()
         {
             await JoinableTaskFactory.SwitchToMainThreadAsync();
-            var solService = await GetServiceAsync(typeof(IVsSolution)) as IVsSolution;
+            var solService = await GetServiceAsync(typeof(SVsSolution)) as IVsSolution;
 
             ErrorHandler.ThrowOnFailure(solService.GetProperty((int)__VSPROPID.VSPROPID_IsSolutionOpen, out object value));
 
