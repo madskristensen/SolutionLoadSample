@@ -20,7 +20,7 @@ Instead, the package will be initialized **after** the startup or solution load 
 
 The consequence is that the solution might already have been loaded when your package initializes and no solution load events will be fired until the user opens another solution. 
 
-[See full Pakcage class in the source](src/VSPackage.cs)
+[See full Package class in the source](src/VSPackage.cs)
 
 ## The new pattern
 ...happens to be what was always considered a best practice. Here are the steps:
@@ -85,7 +85,7 @@ public sealed class VSPackage : AsyncPackage
 }
 ```
 
-[See full Pakcage class in the source](src/VSPackage.cs)
+[See full Package class in the source](src/VSPackage.cs)
 
 This simple check for `IsSolutionLoadedAsync()` is all we have to do and we can now handle the solution open as usual.
 
